@@ -200,7 +200,7 @@ I would like to use this medium to appreciate Microverse that bringing me The be
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md)) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
