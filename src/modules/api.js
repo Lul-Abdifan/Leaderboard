@@ -1,13 +1,12 @@
-const gameId = "qr2y4trdsy2023";
-const baseURL =
-  "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/";
+const gameId = 'qr2y4trdsy2023';
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 const gameURL = `${baseURL}${gameId}/scores`;
 
 const postData = async (data) => {
   const result = fetch(gameURL, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify(data),
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
   const res = await result.json();
   return res;
@@ -15,7 +14,7 @@ const postData = async (data) => {
 
 const fetchData = async () => {
   const result = await fetch(gameURL, {
-    method: "GET",
+    method: 'GET',
   });
   return result.json();
 };

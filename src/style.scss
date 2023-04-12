@@ -1,1 +1,91 @@
+$primary-color: black;
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  font-size: 60px;
+  margin: 60px 50px;
+}
+
+.container {
+  display: flex;
+
+  .scoresTable {
+    padding: 10px 100px;
+    width: 40%;
+
+    .scoreHeader {
+      display: flex;
+      gap: 10px;
+
+      button {
+        color: $primary-color;
+        border: 2px $primary-color solid;
+        box-shadow: 5px 5px 0 2px;
+        margin-left: 180px;
+        padding: 7px 15px;
+        background-color: white;
+      }
+    }
+
+    table {
+      margin-top: 50px;
+      width: 100%;
+      border: 3px $primary-color solid;
+
+      tr {
+        width: 100%;
+
+        &:nth-child(even) {
+          background-color: #e6e3e3;
+        }
+
+        td {
+          padding-right: 10px;
+          padding-top: 10px;
+          font-size: 28px;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.formContainer {
+  margin-left: 30px;
+
+  .add-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 400px;
+
+    .input-box {
+      border: 3px solid black;
+      width: 400px;
+      font-weight: 500;
+      height: 30px;
+      padding: 5px;
+    }
+
+    .add-btn {
+      padding: 7px 15px;
+      background-color: white;
+      border: 2px solid black;
+      font-size: 16px;
+      font-weight: 500;
+      box-shadow: 5px 5px 0 2px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.form h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
