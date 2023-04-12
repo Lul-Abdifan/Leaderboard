@@ -1,7 +1,9 @@
 import './style.scss';
 import { table, refresher, addScore } from './modules/variables';
 import { postData, fetchData } from './modules/api';
-
+document.addEventListener('DOMContentLoaded',()=>{
+  refresh();
+  })
 const render = (data) => {
   const tr = document.createElement('tr');
   const td = document.createElement('td');
@@ -19,6 +21,9 @@ addScore.onsubmit = (e) => {
 };
 
 refresher.onclick = () => {
+  refresh();
+};
+const refresh=()=>{
   table.innerHTML = '';
   fetchData().then((res) => {
     res.result
@@ -27,4 +32,4 @@ refresher.onclick = () => {
         render(data);
       });
   });
-};
+}
