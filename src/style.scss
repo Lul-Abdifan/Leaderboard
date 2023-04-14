@@ -1,12 +1,44 @@
 $primary-color: black;
+$color-secondary: #6c757d;
+$color-text: #333;
+$font-family: arial, sans-serif;
+$color-1: #f9c;
+$color-2: #66c2ff;
+$color-3: #6c6;
+$color-4: #fff;
+$color-5: #007bff;
+$color-6: #555;
 
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  background: linear-gradient(to top, $color-1, $color-2, $color-3);
+}
+
+.header {
+  font-size: 60px;
+  margin: 60px 50px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
 .container {
   display: flex;
+  margin-bottom: 130px;
 
   .scoresTable {
     padding: 10px 100px;
@@ -22,7 +54,7 @@ $primary-color: black;
         box-shadow: 5px 5px 0 2px;
         margin-left: 180px;
         padding: 7px 15px;
-        background-color: white;
+        background-color: $color-4;
       }
     }
 
@@ -30,6 +62,7 @@ $primary-color: black;
       margin-top: 50px;
       width: 100%;
       border: 3px $primary-color solid;
+      border-radius: 30px;
 
       tr {
         width: 100%;
@@ -39,7 +72,7 @@ $primary-color: black;
         }
 
         td {
-          padding-right: 10px;
+          padding: 10px;
           padding-top: 10px;
           font-size: 28px;
           color: $primary-color;
@@ -60,21 +93,158 @@ $primary-color: black;
     width: 400px;
 
     .input-box {
-      border: 3px solid black;
+      border: 3px solid $primary-color;
       width: 400px;
       font-weight: 500;
       height: 30px;
       padding: 5px;
+      outline: none;
     }
 
     .add-btn {
       padding: 7px 15px;
-      background-color: white;
-      border: 2px solid black;
+      background-color: $color-4;
+      border: 2px solid $primary-color;
       font-size: 16px;
       font-weight: 500;
       box-shadow: 5px 5px 0 2px;
       align-self: flex-end;
     }
+  }
+}
+
+.form h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.refresher {
+  background-color: $color-4 !important;
+  color: $color-4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 0 #ff2600b3;
+    }
+
+    50% {
+      box-shadow: 0 0 20px rgba(115, 235, 68, 0.7);
+    }
+
+    100% {
+      box-shadow: 0 0 0 rgba(38, 0, 255, 0.7);
+    }
+  }
+}
+
+.footer {
+  background-color: var(--color-4);
+  padding: 15px 100px;
+  margin-bottom: 10px !important;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px !important;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--color-6);
+  margin: 0;
+}
+
+p a {
+  color: var(--color-6);
+  text-decoration: none;
+}
+
+.social-media a {
+  display: block;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p a:hover {
+  color: var(--color-5);
+}
+
+.social-media a:hover {
+  color: var(--color-5);
+}
+
+footer {
+  padding: 10px 10px;
+  border: 5px $color-2 solid;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .refresher {
+    margin-left: 200px !important;
+    padding-right: 60px !important;
+    padding-top: 10px !important;
+  }
+
+  .scoresTable {
+    width: 80% !important;
+    padding: 0 30px !important;
+  }
+
+  .scoreHeader {
+    margin-right: 200px !important;
+  }
+
+  footer {
+    padding: 10px 10px;
+    border: 5px $color-2 solid;
   }
 }
