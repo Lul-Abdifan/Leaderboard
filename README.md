@@ -69,7 +69,7 @@ Leaderboard games are competitive games where players aim for the top spot on a 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Todo-List](Coming Soon)
+- [Leaderboard](https://lul-abdifan.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,11 +95,19 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 <ul>
-    <li>Create your classic access token from github.com</li>
-    <li>run "git clone https://{access_token}@github.com/username/{repo_name}.git"</li>
-    <li>Update your git identity by running "git config --global user.email "your_email@gmail.com""</li>
-    <li>Update your name on git by running "git config --global user.name "your_name"</li>
+    <li>Create your classic access token from github.com and Run the following code with your github account</li>
+   
+```sh
+    git clone git@github.com:Lul-Abdifan/Leaderboard.git 
+    git config --global user.email "your_email@gmail.com 
+    git config --global user.name "your_name"
+
+```
+ 
+ 
   </ul>
+  
+  
 
 
 ### Install
@@ -108,18 +116,47 @@ Install this project with:
 
 - In the first commit of your feature branch create a .github/workflows folder and add a copy of [.github/workflows/linters.yml](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml) to that folder.
 - create a .gitignore file and add 'node_modules' to it
-- run 'npm init -y'
-- run 'npm install --save-dev hint@7.x'
+
+
+
+  
+ ```sh
+        npm init -y
+        npm install --save-dev hint@7.x
+
+```
 - Copy [hintrc](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc) to the root directory of your project.
-- run 'npx hint .'
+ ```sh
+        npx hint .
+
+```
 - Fix validation errors.
-- run 'npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x'
+     
+     
+   ```sh
+       npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+  ```    
+        
+        
 - Copy [stylelintrc.json](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json) to the root directory of your project.
-- Run 'npx stylelint "**/*.{css,scss}"'
-- fix linter errors
-- run 'npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x'
+
+
+ ```sh
+       npx stylelint "**/*.{css,scss}"
+
+```
+
+- Fix linter errors
+ ```sh
+       npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+```
+
 - Copy [eslintrc.json](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
-- Run npx eslint . on the root of your directory of your project
+ ```sh
+       npx eslint .  or npx eslint . --fix
+
+```
 - Fix linter error.
 
 
@@ -128,7 +165,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  use git bash to open in Vs code
+  use git bash to open in Vs code 
 ```
 
 
@@ -145,17 +182,22 @@ Run "npx eslint . --fix to fix linters"
 
   ### Deployment
 
-You can deploy this project using:
+On Github Page
 
-- github pages
+[To Deploy on Github Page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) <br>
+Follow this video to deploy [Easiest way in commands](https://www.youtube.com/watch?v=4G6O0BIoq6M)
+
+
+On Netlify  [Netlify](https://www.netlify.com/)
+
+On Render  [Render](https://www.render.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👤  Author <a name="authors"></a>
 
-👤 **Author1**
 
 - GitHub: [Abdi Bekele](https://github.com/Lul-Abdifan)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
