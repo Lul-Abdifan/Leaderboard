@@ -1,13 +1,6 @@
-$primary-color: black;
-$color-secondary: #6c757d;
-$color-text: #333;
-$font-family: arial, sans-serif;
-$color-1: #f9c;
-$color-2: #66c2ff;
-$color-3: #6c6;
-$color-4: #fff;
-$color-5: #007bff;
-$color-6: #555;
+$primary-color: #000000;
+$secondary-color: #6c757d;
+$tertiary-color: #ffffff;
 
 * {
   padding: 0;
@@ -15,7 +8,7 @@ $color-6: #555;
 }
 
 body {
-  background: linear-gradient(to top, $color-1, $color-2, $color-3);
+  background: linear-gradient(to top, #ff99cc, #66c2ff, #66cc66);
 }
 
 .header {
@@ -40,28 +33,28 @@ body {
   display: flex;
   margin-bottom: 130px;
 
-  .scoresTable {
+  .scores-table {
     padding: 10px 100px;
     width: 40%;
 
-    .scoreHeader {
+    .score-header {
       display: flex;
       gap: 10px;
 
       button {
         color: $primary-color;
-        border: 2px $primary-color solid;
+        border: 2px solid $primary-color;
         box-shadow: 5px 5px 0 2px;
-        margin-left: 180px;
+        margin-left: auto;
         padding: 7px 15px;
-        background-color: $color-4;
+        background-color: $tertiary-color;
       }
     }
 
     table {
       margin-top: 50px;
       width: 100%;
-      border: 3px $primary-color solid;
+      border: 3px solid $primary-color;
       border-radius: 30px;
 
       tr {
@@ -82,7 +75,7 @@ body {
   }
 }
 
-.formContainer {
+.form-container {
   margin-left: 30px;
 
   .add-new {
@@ -103,7 +96,7 @@ body {
 
     .add-btn {
       padding: 7px 15px;
-      background-color: $color-4;
+      background-color: $tertiary-color;
       border: 2px solid $primary-color;
       font-size: 16px;
       font-weight: 500;
@@ -120,131 +113,47 @@ body {
 }
 
 .refresher {
-  background-color: $color-4 !important;
-  color: $color-4;
-  border: none;
+  color: $tertiary-color;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 0;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    opacity: 0;
-    border-radius: 50%;
-    transition: all 0.5s ease-out;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-  }
 
   &:hover {
     cursor: pointer;
-    animation: glow 2s ease-in-out infinite;
   }
-
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 0 #ff2600b3;
-    }
-
-    50% {
-      box-shadow: 0 0 20px rgba(115, 235, 68, 0.7);
-    }
-
-    100% {
-      box-shadow: 0 0 0 rgba(38, 0, 255, 0.7);
-    }
-  }
-}
-
-.footer {
-  background-color: var(--color-4);
-  padding: 15px 100px;
-  margin-bottom: 10px !important;
-  border-radius: 20px;
-  margin-left: 100px;
-  margin-right: 100px !important;
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.social-media {
-  display: flex;
-  align-items: center;
-}
-
 p {
   font-size: 1.2rem;
-  color: var(--color-6);
-  margin: 0;
-}
-
-p a {
-  color: var(--color-6);
-  text-decoration: none;
+  color: #555555;
 }
 
 .social-media a {
-  display: block;
   margin-right: 20px;
   font-size: 1.5rem;
   color: #333;
 }
 
-p a:hover {
-  color: var(--color-5);
-}
-
-.social-media a:hover {
-  color: var(--color-5);
-}
-
 footer {
-  padding: 10px 10px;
-  border: 5px $color-2 solid;
+  padding: 10px;
+  border: 5px solid #244e69;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
     gap: 50px;
   }
 
-  .refresher {
-    margin-left: 200px !important;
-    padding-right: 60px !important;
-    padding-top: 10px !important;
-  }
-
-  .scoresTable {
+  .scores-table {
     width: 80% !important;
-    padding: 0 30px !important;
-  }
-
-  .scoreHeader {
-    margin-right: 200px !important;
-  }
-
-  footer {
-    padding: 10px 10px;
-    border: 5px $color-2 solid;
   }
 }
