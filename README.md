@@ -59,9 +59,12 @@ Leaderboard games are competitive games where players aim for the top spot on a 
 
 - **[Design]**
 ![Full-Screen](src/assets/leaderboard-full-page.png)
+
 - **[Responsive design]**
-![Leaderboard Result](src/assets/leaerboards.add-page.png)
-![Add Result](src/assets/leader-add-page1.png)
+<p align="center">
+  <img src="src/assets/leaerboards.add-page.png" alt="Leaderboard Result" width="400" height="400px">
+  <img src="src/assets/leader-add-page1.png" alt="Add Result" width="400" height="400px">
+</p>
 
 
 
@@ -187,8 +190,8 @@ Run "npx eslint . --fix to fix linters"
 
 On Github Page
 
-[To Deploy on Github Page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) <br>
-Follow this video to deploy [Easiest way in commands](https://www.youtube.com/watch?v=4G6O0BIoq6M)
+[Documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) <br>
+Follow this Video to learn the easiest way to deploy using commands [Github](https://www.youtube.com/watch?v=4G6O0BIoq6M)
 
 
 On Netlify  [Netlify](https://www.netlify.com/)
