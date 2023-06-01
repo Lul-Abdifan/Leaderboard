@@ -69,7 +69,7 @@ Leaderboard games are competitive games where players aim for the top spot on a 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Todo-List](Coming Soon)
+- [Todo-](Coming Soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
